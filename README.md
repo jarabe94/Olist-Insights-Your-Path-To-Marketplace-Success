@@ -87,8 +87,7 @@ Based on the project objectives and data model, we determined KPIs to be used in
 ## 6. Dashboard Overview
 Two dashboards were created using Power BI, each with a different focus. The first dashboard is focused on business performance, more specifically on sales:
 ![image](images/olist_sales_performance_dashboard.png)
-
-
+<br/><br/>
 The second dashboard is focused on customer satisfaction:
 ![image](images/olist_customer_satisfaction_dashboard.png)
 
@@ -114,8 +113,8 @@ The 5 underperforming products based on their sales amount are:
 ![image](images/analysis_question_2.1.png)
 
 The best-performing category is Health and Beauty. It has a total of 8778 orders across the entire country with an average value of almost R$ 143 per order, and 483 sellers in Olist.
-
-
+<br/><br/>
+<br/><br/>
 ![image](images/analysis_question_2.2.png)
 
 On the other hand, the worst-performing category is Insurance and Services with only 2 orders, an average value of R$ 141.50 per order, and 2 registered sellers in Olist.
@@ -125,8 +124,8 @@ This shows that despite having a high average product value Insurance and Servic
 ![image](images/analysis_question_3.1.png)
 
 In both cases, the answer is no. The product category with the highest number of orders is Bed – Bath – Table articles with a total of 9408 but with an average order value of R$ 110.
-
-
+<br/><br/>
+<br/><br/>
 ![image](images/analysis_question_3.2.png)
 
 On the other hand, the product category with the highest average order value is Watches – Gifts with R$ 214 but with a total number of 5619 orders. This shows that the key to a category achieving the best performance is finding the balance between sales volume and product price but with more emphasis on sales volume. This factor seems to have a greater impact on success.
@@ -157,7 +156,8 @@ The maximum delivery duration that still received a good satisfaction score from
 ![image](images/analysis_question_8.1.png)
 
 6.79% of the orders were delivered late. These orders have an average delivery duration of 33.29 days compared with the estimated delivery duration of 22.67 days. Additionally, customers reviewed these orders with an average of 2.27 points.
-
+<br/><br/>
+<br/><br/>
 ![image](images/analysis_question_8.2.png)
 
 In comparison, 93% of orders that were delivered on time were delivered 13 days in advance of their estimated delivery duration and received 4.29 points in the reviews.
@@ -166,7 +166,8 @@ In comparison, 93% of orders that were delivered on time were delivered 13 days 
 ![image](images/analysis_question_9.1.png)
 
 For positive reviews with scores between 4 and 5 points, they placed words like great, excellent, recommended, very good, efficient, quality, and satisfied.
-
+<br/><br/>
+<br/><br/>
 ![image](images/analysis_question_9.2.png)
 
 For negative reviews with scores between 1 and 2 points, they placed the following words: not recommend, different, delivery, missing, defective, wrong, and incomplete.
@@ -213,4 +214,5 @@ Customers benefit from improved satisfaction as sellers align products with thei
 
 Overall, the project strengthens Olist's ecosystem and benefits all stakeholders involved.
 
-
+<br/><br/>
+**Contributors**: Chris Portugalisa, Smill Valdez
