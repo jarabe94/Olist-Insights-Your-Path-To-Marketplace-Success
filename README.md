@@ -1,5 +1,5 @@
 # Olist Insights: Your Path To Marketplace Success
-
+![image](images/olist_insights.jpeg)
 ## 1. Context
 Olist is a Brazilian technology business offering a SaaS solution to boost sales for small businesses with or without an online presence. Acting like a major department store in principal marketplaces in Brazil, the Olist platform is built on three foundational pillars:
 - **Software**: Olist has a platform for sellers that provides them with centralized sales management capabilities. Through this platform, sellers can manage product listings, orders, logistics, payments, and billing. Sellers have access to sales metrics from several marketplaces like Mercado Libre, Amazon, B2W, Americanas, etc.
