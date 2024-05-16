@@ -5,7 +5,7 @@ Olist is a Brazilian technology business offering a SaaS solution to boost sales
 - **Software**: Olist has a platform for sellers that provides them with centralized sales management capabilities. Through this platform, sellers can manage product listings, orders, logistics, payments, and billing. Sellers have access to sales metrics from several marketplaces like Mercado Libre, Amazon, B2W, Americanas, etc.
 - **Contracts**: Olist has established agreements with major marketplaces in Brazil and the Brazilian Postal Service. Sellers only sign one contract with Olist to gain access to all these marketplaces and start selling their products, they do not need to sign a contract with each marketplace.
 - **Shared reputation**: As a major department store, Olist enjoys a high reputation and popularity among customers in various marketplaces, which benefits all sellers using the platform.
-
+![image](images/olist_business_model.png)
 ## 2. Problem Statement
 In today's fast-paced and competitive e-commerce landscape, success as a seller demands more than just listing products on an online platform. To thrive and stay ahead, sellers need access to real-time, data-driven insights that can guide their decisions, optimize their strategies, and unlock their full potential in the marketplace.
 This need for insights is even more critical for new sellers aiming to introduce successful products to the market. By harnessing the power of these insights, new sellers can make informed choices about the products they include in their catalog, enhance product performance, increase customer satisfaction, and ultimately achieve success on the Olist platform.
@@ -70,7 +70,7 @@ The data model was composed of 7 tables:
 The tables contained information on orders from 2021 and 2022 through the Olist profile in all major Brazilian Marketplaces.
 
 All tables were normalized to 3NF, ensuring no transitive dependencies were present, meaning no non-key column was dependent on another non-key column. The following was the final model used as the basis for analyzing and creating the dashboard in Power BI:
-
+![image](images/data_model.png)
 ## 5. KPIs Definition
 Based on the project objectives and data model, we determined KPIs to be used in the analysis to extract insights from the dataset:
 - **Total Sales Amount**: It was calculated by adding all order price values for orders placed in 2021 and 2022 through Olist.
@@ -86,11 +86,16 @@ Based on the project objectives and data model, we determined KPIs to be used in
 
 ## 6. Dashboard Overview
 Two dashboards were created using Power BI, each with a different focus. The first dashboard is focused on business performance, more specifically on sales:
+![image](images/olist_sales_performance_dashboard.png)
+
 
 The second dashboard is focused on customer satisfaction:
+![image](images/olist_customer_satisfaction_dashboard.png)
 
 ## 7. Analysis Questions
 ### 7.1. What are the top 5 overperforming and underperforming product categories on Olist?
+![image](images/analysis_question_1.png)
+
 The top 5 products based on their sales amount are:
 1.	Health and Beauty with R$ 1.25M
 2.	Watches – Gifts with R$ 1.20M
@@ -106,45 +111,63 @@ The 5 underperforming products based on their sales amount are:
 5.	Diapers and Hygiene with R$ 1.4K
 
 ### 7.2. How does the best-performing product category compare with the worst-performing category?
+![image](images/analysis_question_2.1.png)
 
 The best-performing category is Health and Beauty. It has a total of 8778 orders across the entire country with an average value of almost R$ 143 per order, and 483 sellers in Olist.
+
+
+![image](images/analysis_question_2.2.png)
 
 On the other hand, the worst-performing category is Insurance and Services with only 2 orders, an average value of R$ 141.50 per order, and 2 registered sellers in Olist.
 This shows that despite having a high average product value Insurance and Services is a category with no demand and the lowest interest among sellers.
 
 ### 7.3. Does the best-performing product category have the highest number of orders and the highest average order value?
+![image](images/analysis_question_3.1.png)
 
 In both cases, the answer is no. The product category with the highest number of orders is Bed – Bath – Table articles with a total of 9408 but with an average order value of R$ 110.
+
+
+![image](images/analysis_question_3.2.png)
 
 On the other hand, the product category with the highest average order value is Watches – Gifts with R$ 214 but with a total number of 5619 orders. This shows that the key to a category achieving the best performance is finding the balance between sales volume and product price but with more emphasis on sales volume. This factor seems to have a greater impact on success.
 
 ### 7.4. Is there a state with the most concentrated sales revenue?
+![image](images/analysis_question_4.png)
 
 The State of Sao Paulo has the highest concentrated sales amount with R$ 5.2M, followed by the State of Rio de Janeiro with R$ 1.8M and the State of Minas Gerais with R$ 1.6M.
 These three states have accumulated 63% of total sales, showing that the southeast area of the country is the best location for new sellers to establish their businesses.
 
 ### 7.5. Is there any date with the highest concentrated number of orders?
+![image](images/analysis_question_5.png)
 
 Yes, the month of November 2021 registered the highest number of orders with7451 orders. This unusual pattern is even more visible on 24 November, with 1166 orders. The reason behind this is Black Friday and the launch of offers and discounts.
 
 ### 7.6. What is the average satisfaction score and how does the best-performing product category compare with it?
+![image](images/analysis_question_6.png)
 
 The average satisfaction score is 4.09. The top-performing product category, Health, and Beauty, has an average satisfaction score of 4.19. This value shows that customers in general are satisfied with Health and Beauty products.
 
 ### 7.7. Is there any relation between the delivery duration and the customer satisfaction score?
+![image](images/analysis_question_7.png)
 
 Yes, deliveries within 2 days had the highest average satisfaction score of 4.47. By contrast, deliveries that took 49 days received the lowest average satisfaction score with 1.46 points.
 The maximum delivery duration that still received a good satisfaction score from customers was 20 days. Beyond this range, customers gave below 4 points in their reviews.
 
 ### 7.8.	What is the proportion of orders that were delivered late? How is their average delivery duration compared with their average estimated delivery duration?
+![image](images/analysis_question_8.1.png)
 
 6.79% of the orders were delivered late. These orders have an average delivery duration of 33.29 days compared with the estimated delivery duration of 22.67 days. Additionally, customers reviewed these orders with an average of 2.27 points.
+
+![image](images/analysis_question_8.2.png)
 
 In comparison, 93% of orders that were delivered on time were delivered 13 days in advance of their estimated delivery duration and received 4.29 points in the reviews.
 
 ### 7.9. What are the most relevant words placed by customers in their positive and negative reviews?
+![image](images/analysis_question_9.1.png)
 
 For positive reviews with scores between 4 and 5 points, they placed words like great, excellent, recommended, very good, efficient, quality, and satisfied.
+
+![image](images/analysis_question_9.2.png)
 
 For negative reviews with scores between 1 and 2 points, they placed the following words: not recommend, different, delivery, missing, defective, wrong, and incomplete.
 
