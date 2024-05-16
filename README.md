@@ -8,21 +8,21 @@ Olist is a Brazilian technology business offering a SaaS solution to boost sales
 ![image](images/olist_business_model.png)
 ## 2. Problem Statement
 In today's fast-paced and competitive e-commerce landscape, success as a seller demands more than just listing products on an online platform. To thrive and stay ahead, sellers need access to real-time, data-driven insights that can guide their decisions, optimize their strategies, and unlock their full potential in the marketplace.
-This need for insights is even more critical for new sellers aiming to introduce successful products to the market. By harnessing the power of these insights, new sellers can make informed choices about the products they include in their catalog, enhance product performance, increase customer satisfaction, and ultimately achieve success on the Olist platform.
+This need for insights is even more critical for new sellers aiming to introduce successful products to the market. By harnessing the power of these insights, new sellers can make informed choices about the products they will include in their catalog, enhance product performance, increase customer satisfaction, and ultimately achieve success on the Olist platform.
 
 ## 3. Goals and Objectives
 ### 3.1. Purpose
-The purpose of this project is to provide sellers at the Olist store with comprehensive insights and data-driven recommendations through the "Olist Insights" project. With a user-friendly and intuitive dashboard, we aim to empower sellers to make informed decisions, optimize their product performance, and enhance their overall success in the e-commerce marketplace.
+The purpose of this project is to provide sellers at the Olist store with comprehensive insights and data-driven recommendations through the "Olist Insights" project. With two user-friendly and intuitive dashboards, we aim to empower sellers to make informed decisions, optimize their product performance, and enhance their overall success in the e-commerce marketplace.
 
 ### 3.2. Objectives
 - **Develop a User-Friendly and Intuitive Dashboard**:
-The primary objective of the "Olist Insights" project is to create a user-friendly and intuitive dashboard for sellers on the Olist store. The dashboard serves as a centralized hub, displaying key performance indicators (KPIs) focused on existing and new seller's needs. By presenting critical metrics clearly and visually, the dashboard enables sellers to assess their performance at a glance and gain actionable insights.
+The primary objective of the "Olist Insights" project is to create two user-friendly and intuitive dashboards for sellers on the Olist store. The dashboard serves as a centralized hub, displaying key performance indicators (KPIs) focused on existing and new seller's needs.
 - **Analyze Product Performance**:
-The project aims to conduct in-depth product performance analysis to assist sellers in optimizing their offerings. Through the aggregation and analysis of sales data, the project will identify the top-performing product categories on Olist. Additionally, it will delve into the underlying factors contributing to the success of high-performing categories. By understanding the drivers of success, sellers can refine their product strategies and capitalize on market opportunities.
+The project aims to analyze product performance to help sellers optimize their offerings. By aggregating and analyzing sales data, it will identify top-performing product categories on Olist and the factors contributing to their success. This understanding will enable sellers to refine their strategies and capitalize on market opportunities.
 - **Provide Actionable Recommendations**:
-Building upon the analysis, the "Olist Insights" project aims to deliver actionable recommendations to new sellers. These recommendations encompass various aspects, including sales performance, order values, delivery performance, and customer engagement and satisfaction. By offering business suggestions, sellers can make data-driven decisions that align with their specific goals and drive business growth.
+Building on the analysis, the "Olist Insights" project aims to provide actionable recommendations for new sellers. These suggestions, covering sales performance, order values, delivery and customer satisfaction, enable data-driven decisions to achieve specific goals and drive business growth.
 - **Foster Seller Success and Platform Growth**:
-Ultimately, the purpose of the "Olist Insights" project is to foster the success of individual sellers while contributing to the overall growth and reputation of the Olist platform. By empowering sellers with valuable data-driven insights and recommendations, the project aims to create a thriving ecosystem where sellers can thrive, customers can enjoy exceptional shopping experiences, and Olist continues to be a trusted and vibrant department store in online marketplaces.
+Ultimately, the "Olist Insights" project aims to foster seller success and enhance Olist's growth and reputation. By providing valuable data-driven insights and recommendations, the project creates a thriving ecosystem where sellers excel, customers enjoy exceptional shopping experiences, and Olist remains a trusted online department store.
 
 ## 4. Data Preprocessing
 ### 4.1. Data Collection
@@ -37,7 +37,7 @@ Initially, reviews were in Portuguese, therefore their translation to English wa
 
 - **Data Cleaning and Removal of Irrelevant Records**: To maintain data quality and relevance, data from the reviews dataset that contained typos or special characters making the comments incomprehensible were removed from the analysis. Additionally, orders from months before 2021 were removed from the orders, payments, reviews, and order_items datasets.
 
-- **Removal of Rows with Blank Delivery Date**: In the orders table, rows classified as “delivered” but that contained blank delivery dates were removed as they were not useful for the calculations of time ranges. This step was taken to focus the analysis on meaningful feedback and eliminate irrelevant data that could potentially skew insights.
+- **Removal of Rows with Blank Delivery Date**: In the orders table, rows classified as “delivered” but that contained blank delivery dates were removed as they were not useful for calculating time ranges. This step was taken to focus the analysis on meaningful feedback and eliminate irrelevant data that could skew insights.
 
 - **Elimination of Unnecessary Columns**: In the product file, unnecessary columns, such as product weight, product length, product height, and product width, were removed. This was done to streamline the dataset and focus on essential variables relevant to the project's objectives.
 
@@ -55,7 +55,7 @@ Data validation was conducted through divergent validity testing to ensure the i
 - Payment Value and Review Score: 0.028363
 - Payment Sequential and Estimated Delivery Duration: -0.09557
 
-The correlation coefficient results indicated that the variables in the dataset were distinct and exhibited minimal correlations with each other. Consequently, the dataset is deemed valid for subsequent analyses.
+The correlation coefficient results indicated that the variables in the dataset were distinct and exhibited minimal correlations with each other. Consequently, the dataset was deemed valid for subsequent analyses.
 
 ### 4.5. Data Modelling and Normalization
 The data model was composed of 7 tables:
@@ -69,7 +69,7 @@ The data model was composed of 7 tables:
 
 The tables contained information on orders from 2021 and 2022 through the Olist profile in all major Brazilian Marketplaces.
 
-All tables were normalized to 3NF, ensuring no transitive dependencies were present, meaning no non-key column was dependent on another non-key column. The following was the final model used as the basis for analyzing and creating the dashboard in Power BI:
+All tables were normalized to 3NF, ensuring no transitive dependencies were present, meaning no non-key column was dependent on another non-key column. The following was the final model used to analyze and create the dashboard in Power BI:
 ![image](images/data_model.png)
 ## 5. KPIs Definition
 Based on the project objectives and data model, we determined KPIs to be used in the analysis to extract insights from the dataset:
@@ -77,7 +77,7 @@ Based on the project objectives and data model, we determined KPIs to be used in
 - **Total Number of Orders**: It was calculated by counting the unique order IDs for orders placed in 2021 and 2022 through Olist.
 - **Top-performing Product Categories**: It helps identify the product categories that generated the highest sales amount in Olist. To calculate it we summed the price of all orders and categorized it by product category to display the top 10 with the highest sales amount.
 - **Underperforming Product Categories**: It helps identify the product categories with the lowest sales amount on the Olist store. To calculate it we computed the total number of orders and categorized it by product category to display the top 10 with the lowest sales amount.
-- **Average Order Value**: It measures the average value of orders placed by customers. We computed it by dividing the total sum of order prices and the total number of orders. It is important to mention that each order can include several products, therefore the total price of all products for an order was considered for the calculation without including the freight value, which is directly paid by the customer. 
+- **Average Order Value**: It measures the average value of orders placed by customers. We computed it by dividing the total sum of order prices and the total number of orders. It is important to mention that each order could include several products, therefore the total price of all products for an order was considered for the calculation without including the freight value, which was directly paid by the customer. 
 - **Total number of Sellers**: It was calculated by adding the number of sellers available in Olist. This KPI can provide new sellers with the number of existing competitors in Olist. In addition, new sellers can relate the results of a product category to a defined number of existing sellers.
 - **Average Customer Satisfaction Score**: We aggregated and averaged the review score. This KPI can provide insights into the satisfaction level per product category, delivery status, and delivery duration.
 - **Average Delivery Duration**: It measures the time it takes a seller to fulfill an order by delivering the purchased product to the customer. It was calculated by averaging the difference between the date all purchases were approved and the date they were delivered to the customer’s location.
@@ -118,7 +118,7 @@ The best-performing category is Health and Beauty. It has a total of 8778 orders
 ![image](images/analysis_question_2.2.png)
 
 On the other hand, the worst-performing category is Insurance and Services with only 2 orders, an average value of R$ 141.50 per order, and 2 registered sellers in Olist.
-This shows that despite having a high average product value Insurance and Services is a category with no demand and the lowest interest among sellers.
+This shows that despite having a high average product value, Insurance and Services is a category with no demand and the lowest interest among sellers.
 
 ### 7.3. Does the best-performing product category have the highest number of orders and the highest average order value?
 ![image](images/analysis_question_3.1.png)
