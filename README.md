@@ -95,14 +95,14 @@ The second dashboard is focused on customer satisfaction:
 ### 7.1. What are the top 5 overperforming and underperforming product categories on Olist?
 ![image](images/analysis_question_1.png)
 
-The top 5 products based on their sales amount are:
+The top 5 product categories, ranked by sales amount, are:
 1.	Health and Beauty with R$ 1.25M
 2.	Watches – Gifts with R$ 1.20M
 3.	Bed – Bath – Table articles with R$ 1.04M
 4.	Sports – Leisure with R$ 0.98M
 5.	Computer Accessories with R$ 0.91M
 
-The 5 underperforming products based on their sales amount are:
+The 5 underperforming product categories, ranked by sales amount, are:
 1.	Insurance and Services with R$ 0.3K
 2.	Fashion – Children's Clothes with R$ 0.6K
 3.	CDs– DVDs – Musicals with R$ 0.7K
@@ -120,7 +120,7 @@ The best-performing category is Health and Beauty. It has a total of 8778 orders
 On the other hand, the worst-performing category is Insurance and Services with only 2 orders, an average value of R$ 141.50 per order, and 2 registered sellers in Olist.
 This shows that despite having a high average product value, Insurance and Services is a category with no demand and the lowest interest among sellers.
 
-### 7.3. Does the best-performing product category have the highest number of orders and the highest average order value?
+### 7.3. Does the best-performing product category have both the highest number of orders and the highest average order value?
 ![image](images/analysis_question_3.1.png)
 
 In both cases, the answer is no. The product category with the highest number of orders is Bed – Bath – Table articles with a total of 9408 but with an average order value of R$ 110.
@@ -128,49 +128,47 @@ In both cases, the answer is no. The product category with the highest number of
 <br/><br/>
 ![image](images/analysis_question_3.2.png)
 
-On the other hand, the product category with the highest average order value is Watches – Gifts with R$ 214 but with a total number of 5619 orders. This shows that the key to a category achieving the best performance is finding the balance between sales volume and product price but with more emphasis on sales volume. This factor seems to have a greater impact on success.
+On the other hand, the product category with the highest average order value is Watches – Gifts with R$ 214 but with a total number of 5619 orders. This indicates that the key to achieving the best performance in a category is balancing sales volume and product price, with a greater emphasis on sales volume. This factor appears to have a more significant impact on success.
 
-### 7.4. Is there a state with the most concentrated sales revenue?
+### 7.4. Is there a state with the highest concentration of sales revenue?
 ![image](images/analysis_question_4.png)
 
-The State of Sao Paulo has the highest concentrated sales amount with R$ 5.2M, followed by the State of Rio de Janeiro with R$ 1.8M and the State of Minas Gerais with R$ 1.6M.
-These three states have accumulated 63% of total sales, showing that the southeast area of the country is the best location for new sellers to establish their businesses.
+The state of São Paulo has the highest sales concentration, with R$ 5.2M, followed by Rio de Janeiro with R$ 1.8M, and Minas Gerais with R$ 1.6M. These three states account for 63% of total sales, indicating that the southeast region of the country is the best location for new sellers to establish their businesses.
 
-### 7.5. Is there any date with the highest concentrated number of orders?
+### 7.5. Was there a date with the highest concentration of orders?
 ![image](images/analysis_question_5.png)
 
-Yes, the month of November 2021 registered the highest number of orders with7451 orders. This unusual pattern is even more visible on 24 November, with 1166 orders. The reason behind this is Black Friday and the launch of offers and discounts.
+Yes, the month of November 2021 registered the highest number of orders, with 7,451 orders. This unusual pattern was even more noticeable on November 24, with 1,166 orders. The reason behind this spike was Black Friday and the launch of offers and discounts.
 
-### 7.6. What is the average satisfaction score and how does the best-performing product category compare with it?
+### 7.6. What was the average satisfaction score and how did the best-performing product category compare with it?
 ![image](images/analysis_question_6.png)
 
-The average satisfaction score is 4.09. The top-performing product category, Health, and Beauty, has an average satisfaction score of 4.19. This value shows that customers in general are satisfied with Health and Beauty products.
+The average satisfaction score was 4.09. The top-performing product category, Health, and Beauty, had an average satisfaction score of 4.19. This indicates that customers are generally satisfied with Health and Beauty products.
 
-### 7.7. Is there any relation between the delivery duration and the customer satisfaction score?
+### 7.7. Was there any relation between the delivery duration and the customer satisfaction score?
 ![image](images/analysis_question_7.png)
 
-Yes, deliveries within 2 days had the highest average satisfaction score of 4.47. By contrast, deliveries that took 49 days received the lowest average satisfaction score with 1.46 points.
-The maximum delivery duration that still received a good satisfaction score from customers was 20 days. Beyond this range, customers gave below 4 points in their reviews.
+Yes, deliveries completed within 2 days had the highest average satisfaction score of 4.47. In contrast, deliveries taking 49 days received the lowest average satisfaction score, with 1.46 points. Customers generally rated deliveries positively up to a maximum duration of 20 days. Beyond this threshold, satisfaction scores dropped below 4 points in customer reviews.
 
 ### 7.8.	What is the proportion of orders that were delivered late? How is their average delivery duration compared with their average estimated delivery duration?
 ![image](images/analysis_question_8.1.png)
 
-6.79% of the orders were delivered late. These orders have an average delivery duration of 33.29 days compared with the estimated delivery duration of 22.67 days. Additionally, customers reviewed these orders with an average of 2.27 points.
+6.79% of the orders were delivered late, with an average delivery duration of 33.29 days compared to the estimated delivery duration of 22.67 days. Additionally, customers rated these orders with an average of 2.27 points in their reviews.
 <br/><br/>
 <br/><br/>
 ![image](images/analysis_question_8.2.png)
 
-In comparison, 93% of orders that were delivered on time were delivered 13 days in advance of their estimated delivery duration and received 4.29 points in the reviews.
+In comparison, 93% of orders that were delivered on time were delivered 13 days in advance of their estimated delivery duration and received an average rating of 4.29 points in the reviews.
 
-### 7.9. What are the most relevant words placed by customers in their positive and negative reviews?
+### 7.9. What were the most commonly used words by customers in their positive and negative reviews?
 ![image](images/analysis_question_9.1.png)
 
-For positive reviews with scores between 4 and 5 points, they placed words like great, excellent, recommended, very good, efficient, quality, and satisfied.
+Positive reviews, with scores between 4 and 5 points, frequently included words such as 'great', 'excellent', 'recommended', 'very good', 'efficient', 'quality', and 'satisfied'.
 <br/><br/>
 <br/><br/>
 ![image](images/analysis_question_9.2.png)
 
-For negative reviews with scores between 1 and 2 points, they placed the following words: not recommend, different, delivery, missing, defective, wrong, and incomplete.
+Negative reviews, with scores between 1 and 2 points, often contained words like 'not recommend,' 'different,' 'delivery,' 'missing,' 'defective,' 'wrong,' and 'incomplete'.
 
 ## 8. Key Outcomes and Recommendations
 ### 8.1. **Sales performance**:
@@ -200,7 +198,7 @@ Sellers should prioritize efficient and timely deliveries to maintain higher cus
 
 ### 8.6. **Review Keywords**:
 
-Positive reviews were associated with words like "great," "excellent," "recommended", "very good," and "satisfied," while negative reviews mentioned issues like "not recommend," "delivery," "missing," "defective," and "wrong."
+Positive reviews were associated with words like 'great', 'excellent', 'recommended', 'very good', and 'satisfied', while negative reviews mentioned issues like 'not recommend', 'delivery', 'missing', 'defective', and 'wrong'.
 Sellers should pay attention to customer feedback to improve overall customer experience.
 Special attention to delivery duration, missing or incomplete orders, and product quality to avoid defects or differences with images published in marketplaces.
 
